@@ -2,40 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>More About Hunger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Hunger</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #222;
-      text-align: center;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
     }
 
     header {
-      background: #333;
+      background: #b30000;
       color: white;
       padding: 20px;
+      text-align: center;
     }
 
-    .container {
-      padding: 20px;
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
     }
 
-    button {
-      padding: 10px 20px;
-      margin: 10px;
-      border: none;
-      background: #333;
+    nav a {
       color: white;
-      cursor: pointer;
-      font-size: 16px;
+      text-decoration: none;
+      margin: 5px;
+      padding: 10px 15px;
+      background: #444;
       border-radius: 5px;
+      transition: 0.3s;
     }
 
-    button:hover {
-      background: #000;
+    nav a:hover {
+      background: #b30000;
+    }
+
+    .content {
+      padding: 30px;
+      text-align: center;
     }
   </style>
 </head>
@@ -43,18 +51,23 @@
 <body>
 
   <header>
-    <h1>Why World Hunger Happens</h1>
+    <h1>World Hunger</h1>
   </header>
 
-  <div class="container">
-    <p>
-      Hunger is caused by poverty, conflict, climate change, and food waste.
-      Millions of tons of food are wasted every year while people starve.
-    </p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="page.html">Button 1</a>
+    <a href="page1.html">Button 2</a>
+    <a href="page2.html">Button 3</a>
+    <a href="page3.html">Button 4</a>
+    <a href="page4.html">Button 5</a>
+  </nav>
 
-    <button onclick="location.href='index.html'">
-      Back to Home
-    </button>
+  <div class="content">
+    <h2>Welcome to the World Hunger Project</h2>
+    <p>
+      Replace this text with your information for each page.
+    </p>
   </div>
 
 </body>
