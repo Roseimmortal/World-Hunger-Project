@@ -54,169 +54,7 @@ nav {
   color: #0f1626;
 }
 
-/* HERO */
-.hero {
-  height: 65vh;
-  margin-top: 70px;
-  background: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1400&auto=format&fit=crop');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-}
-
-/* dark overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 22, 38, 0.35);
-}
-
-/* 🔥 HERO SOURCE (INSIDE IMAGE) */
-.hero-source {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 11px;
-  background: rgba(0,0,0,0.35);
-  padding: 4px 10px;
-  border-radius: 8px;
-  color: rgba(255,255,255,0.85);
-  backdrop-filter: blur(6px);
-  z-index: 2;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 3;
-}
-
-.hero-content h1 {
-  font-size: 64px;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  max-width: 700px;
-  font-size: 20px;
-  color: #cbd5e1;
-  margin: auto;
-}
-
-/* BUTTON */
-.hero-content button {
-  margin-top: 25px;
-  padding: 14px 30px;
-  border: none;
-  background: linear-gradient(135deg, #ff4d4d, #ff2e2e);
-  color: white;
-  font-size: 18px;
-  border-radius: 14px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.25s ease;
-}
-
-.hero-content button:hover {
-  transform: translateY(-3px) scale(1.03);
-}
-
-/* CARDS */
-.cards-container {
-  padding: 100px 10%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-/* YOUR ORIGINAL ANIMATION (UNCHANGED LOGIC) */
-.info-card {
-  display: flex;
-  gap: 40px;
-  background: rgba(255,255,255,0.04);
-  padding: 40px;
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.08);
-
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.7s ease;
-}
-
-.info-card.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.image-box {
-  position: relative;
-}
-
-.image-box img {
-  width: 460px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
-.img-source {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 11px;
-  background: rgba(0,0,0,0.4);
-  padding: 4px 10px;
-  border-radius: 8px;
-  color: white;
-}
-
-.card-content h2 {
-  font-size: 36px;
-  margin-bottom: 12px;
-  color: #ff4d4d;
-}
-
-.card-content p {
-  font-size: 19px;
-  color: #d1dbe8;
-  line-height: 1.7;
-}
-</style>
-</head>
-
-<body>
-
-<nav>
-  <div class="logo">WORLD HUNGER</div>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="page.html">Causes</a>
-    <a href="page2.html">Solutions</a>
-    <a href="page3.html">Work Cited</a>
-    <a href="page4.html">Image Cited</a>
-  </div>
-</nav>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #0f1626;
-  color: #e6edf3;
-}
-
-/* TITLE SECTION */
+/* HEADER */
 .header {
   margin-top: 120px;
   text-align: center;
@@ -274,7 +112,6 @@ body {
   line-height: 1.6;
 }
 
-/* LINKS WRAPPER */
 a.card-link {
   text-decoration: none;
   color: inherit;
@@ -284,8 +121,18 @@ a.card-link {
 
 <body>
 
-<!-- ⚠️ YOUR NAVBAR GOES HERE EXACTLY AS YOU ALREADY HAVE IT -->
-<!-- DO NOT CHANGE IT -->
+<!-- NAVBAR (UNCHANGED) -->
+<!-- NAVBAR (UNCHANGED) -->
+<nav>
+  <div class="logo">WORLD HUNGER</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="page.html">Causes</a>
+    <a href="page2.html">Solutions</a>
+    <a href="page3.html">Work Cited</a>
+    <a href="page4.html">Image Cited</a>
+  </div>
+</nav>
 
 <div class="header">
   <h1>Causes of World Hunger</h1>
@@ -296,7 +143,13 @@ a.card-link {
 
   <a class="card-link" href="poverty.html">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1522098543979-ffc7f79d5f6f?q=80&w=900&auto=format&fit=crop">
+      <div>
+        <img src="https://img.globalcitizen.org/NSixJxr2mH_QWc7JX869nNxVdTbr4HsPTJ3qVfm5/1600x900%2Ffilters%3Aquality%2885%29%3Afocal%281050%2C350%29%2Fhttps%3A%2F%2Fmedia.globalcitizen.org%2Fb1%2F0d%2Fb10d523f-3877-470b-8624-13602761a902%2Fextreme-poverty-un-explainer-001.jpg">
+        <div style="font-size:11px; color:#cbd5e1; margin-top:6px;">
+          (Varrial)
+        </div>
+      </div>
+
       <div>
         <h2>Poverty</h2>
         <p>Learn how poverty limits access to food, education, and basic needs.</p>
@@ -306,7 +159,13 @@ a.card-link {
 
   <a class="card-link" href="conflict.html">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=900&auto=format&fit=crop">
+      <div>
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=900&auto=format&fit=crop">
+        <div style="font-size:11px; color:#cbd5e1; margin-top:6px;">
+          Source: Unsplash
+        </div>
+      </div>
+
       <div>
         <h2>Conflict</h2>
         <p>Understand how war destroys food systems and forces people into hunger.</p>
@@ -316,13 +175,21 @@ a.card-link {
 
   <a class="card-link" href="climate.html">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop">
+      <div>
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop">
+        <div style="font-size:11px; color:#cbd5e1; margin-top:6px;">
+          Source: Unsplash
+        </div>
+      </div>
+
       <div>
         <h2>Climate Change</h2>
         <p>See how extreme weather reduces food production worldwide.</p>
       </div>
     </div>
   </a>
+
+</div>
 
 </div>
 
