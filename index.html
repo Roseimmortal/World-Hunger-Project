@@ -353,6 +353,174 @@ const observer = new IntersectionObserver((entries) => {
 cards.forEach(card => observer.observe(card));
 
 </script>
+<!-- DONATION BAR (BOTTOM FIXED) -->
+<div class="donation-bar">
+  <div class="donation-text">
+    Help fight world hunger today 🌍
+  </div>
 
+  <button onclick="toggleDonate()">Donate</button>
+</div>
+
+<!-- HIDDEN IFRAME PANEL -->
+<div class="donate-panel" id="donatePanel">
+<div class="donate-header">
+  <span>UN World Food Programme Donation</span>
+
+  <div style="display:flex; gap:10px; align-items:center;">
+    <button onclick="refreshDonate()">↻</button>
+    <button onclick="toggleDonate()">✕</button>
+  </div>
+</div>
+
+  <iframe src="https://donate.wfp.org/1243/donation/regular/?campaign=1517"></iframe>
+</div>
+
+<style>
+.donation-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 22, 38, 0.95);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  z-index: 2000;
+}
+
+.donation-text {
+  color: #e6edf3;
+  font-weight: bold;
+}
+
+.donation-bar button {
+  background: #ff4d4d;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.donation-bar button:hover {
+  transform: scale(1.05);
+}
+
+.donate-panel {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 420px;
+  height: 520px;
+  background: #0f1626;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  overflow: hidden;
+  display: none;
+  z-index: 3000;
+}
+
+.donate-panel iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.donate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255,255,255,0.05);
+  color: white;
+  font-weight: bold;
+}
+
+.donate-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+</style>
+
+<script>
+function toggleDonate() {
+  const panel = document.getElementById("donatePanel");
+  panel.style.display = panel.style.display === "block" ? "none" : "block";
+}
+</script>
 </body>
+<!-- DONATION BAR (BOTTOM FIXED) -->
+<div class="donation-bar">
+  <div class="donation-text">
+    Help fight world hunger today 🌍
+  </div>
+
+  <button onclick="toggleDonate()">Donate</button>
+</div>
+
+<!-- DONATION PANEL -->
+<div class="donate-panel" id="donatePanel">
+  <div class="donate-header">
+    <span>UN World Food Programme Donation</span>
+    <button onclick="toggleDonate()">✕</button>
+  </div>
+
+  <iframe src="https://donate.wfp.org/1243/donation/regular/?campaign=1517"></iframe>
+</div>
+
+<!-- DONATION STYLES (SAFE, DOES NOT AFFECT OTHER ELEMENTS) -->
+<style>
+.donation-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 22, 38, 0.95);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  z-index: 2000;
+}
+
+.donation-text {
+  color: #e6edf3;
+  font-weight: bold;
+}
+
+.donation-bar button {
+  background: #ff4d4d;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.donation-bar button:hover {
+  transform: scale(1.05);
+}
+
+.donate-panel {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 420px;
+  height: 520px;
+  background: #0f1626;
+  border: 1px solid
 </html>

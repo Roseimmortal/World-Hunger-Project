@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>World Hunger</title>
+<title>Works Cited - World Hunger</title>
 
 <style>
 * {
@@ -18,7 +18,7 @@ body {
   color: #e6edf3;
 }
 
-/* NAVBAR */
+/* NAVBAR (UNCHANGED) */
 nav {
   position: fixed;
   top: 0;
@@ -56,137 +56,54 @@ nav {
 
 /* HERO */
 .hero {
-  height: 65vh;
-  margin-top: 70px;
-  background: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1400&auto=format&fit=crop');
+  margin-top: 90px;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1400&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
 }
 
-/* dark overlay */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(15, 22, 38, 0.35);
+  background: rgba(15,22,38,0.65);
 }
 
-/* 🔥 HERO SOURCE (INSIDE IMAGE) */
-.hero-source {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 11px;
-  background: rgba(0,0,0,0.35);
-  padding: 4px 10px;
-  border-radius: 8px;
-  color: rgba(255,255,255,0.85);
-  backdrop-filter: blur(6px);
-  z-index: 2;
-}
-
-.hero-content {
+.hero h1 {
   position: relative;
-  z-index: 3;
-}
-
-.hero-content h1 {
-  font-size: 64px;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  max-width: 700px;
-  font-size: 20px;
-  color: #cbd5e1;
-  margin: auto;
-}
-
-/* BUTTON */
-.hero-content button {
-  margin-top: 25px;
-  padding: 14px 30px;
-  border: none;
-  background: linear-gradient(135deg, #ff4d4d, #ff2e2e);
-  color: white;
-  font-size: 18px;
-  border-radius: 14px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.25s ease;
-}
-
-.hero-content button:hover {
-  transform: translateY(-3px) scale(1.03);
-}
-
-/* CARDS */
-.cards-container {
-  padding: 100px 10%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-/* YOUR ORIGINAL ANIMATION (UNCHANGED LOGIC) */
-.info-card {
-  display: flex;
-  gap: 40px;
-  background: rgba(255,255,255,0.04);
-  padding: 40px;
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.08);
-
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.7s ease;
-}
-
-.info-card.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.image-box {
-  position: relative;
-}
-
-.image-box img {
-  width: 460px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
-.img-source {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 11px;
-  background: rgba(0,0,0,0.4);
-  padding: 4px 10px;
-  border-radius: 8px;
-  color: white;
-}
-
-.card-content h2 {
-  font-size: 36px;
-  margin-bottom: 12px;
+  font-size: 60px;
   color: #ff4d4d;
 }
 
-.card-content p {
-  font-size: 19px;
-  color: #d1dbe8;
-  line-height: 1.7;
+/* CONTENT */
+.container {
+  padding: 60px 12%;
 }
+
+.citation-box {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 16px;
+  line-height: 1.8;
+}
+
+.citation {
+  margin-bottom: 22px;
+  text-indent: -40px;
+  padding-left: 40px;
+}
+
+.citation h3 {
+  color: #ff4d4d;
+  margin-bottom: 5px;
+}
+
 </style>
 </head>
 
@@ -202,3 +119,81 @@ nav {
     <a href="page4.html">Image Cited</a>
   </div>
 </nav>
+
+<div class="hero">
+  <h1>Works Cited</h1>
+</div>
+
+<div class="container">
+
+  <div class="citation-box">
+
+    <div class="citation">
+      <h3>United Nations World Food Programme.</h3>
+      “Global Hunger Crisis.” World Food Programme, 2025,
+      https://www.wfp.org/global-hunger-crisis.
+    </div>
+
+    <div class="citation">
+      <h3>UNICEF.</h3>
+      “Child Food Poverty.” UNICEF Data, 2024,
+      https://data.unicef.org/resources/child-food-poverty/.
+    </div>
+
+    <div class="citation">
+      <h3>Food and Agriculture Organization (FAO).</h3>
+      “The State of Food Security and Nutrition in the World.”
+      FAO, 2023,
+      https://www.fao.org/publications/sofi/.
+    </div>
+
+    <div class="citation">
+      <h3>World Bank.</h3>
+      “Poverty and Food Insecurity Overview.”
+      World Bank Group, 2024,
+      https://www.worldbank.org/en/topic/foodsecurity.
+    </div>
+
+    <div class="citation">
+      <h3>National Geographic.</h3>
+      “Causes of World Hunger.”
+      National Geographic Society, 2023,
+      https://www.nationalgeographic.com/environment/article/food-crisis.
+    </div>
+
+    <!-- ADDED SOURCES -->
+
+    <div class="citation">
+      <h3>World Health Organization (WHO).</h3>
+      “Malnutrition Fact Sheet.”
+      WHO, 2024,
+      https://www.who.int/news-room/fact-sheets/detail/malnutrition.
+    </div>
+
+    <div class="citation">
+      <h3>United Nations.</h3>
+      “Sustainable Development Goal 2: Zero Hunger.”
+      UN SDGs, 2024,
+      https://sdgs.un.org/goals/goal2.
+    </div>
+
+    <div class="citation">
+      <h3>Oxfam International.</h3>
+      “Hunger and Inequality Report.”
+      Oxfam, 2023,
+      https://www.oxfam.org/en/food-crisis.
+    </div>
+
+    <div class="citation">
+      <h3>Our World in Data.</h3>
+      “Global Hunger Trends and Statistics.”
+      2024,
+      https://ourworldindata.org/hunger-and-undernourishment.
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
