@@ -202,3 +202,129 @@ nav {
     <a href="page4.html">Image Cited</a>
   </div>
 </nav>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f1626;
+  color: #e6edf3;
+}
+
+/* TITLE SECTION */
+.header {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 52px;
+  color: #ff4d4d;
+}
+
+.header p {
+  margin-top: 10px;
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+/* CARDS */
+.container {
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 18px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,77,77,0.5);
+}
+
+.card img {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card h2 {
+  color: #ff4d4d;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* LINKS WRAPPER */
+a.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ⚠️ YOUR NAVBAR GOES HERE EXACTLY AS YOU ALREADY HAVE IT -->
+<!-- DO NOT CHANGE IT -->
+
+<div class="header">
+  <h1>Causes of World Hunger</h1>
+  <p>Click a topic below to explore deeper causes</p>
+</div>
+
+<div class="container">
+
+  <a class="card-link" href="poverty.html">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522098543979-ffc7f79d5f6f?q=80&w=900&auto=format&fit=crop">
+      <div>
+        <h2>Poverty</h2>
+        <p>Learn how poverty limits access to food, education, and basic needs.</p>
+      </div>
+    </div>
+  </a>
+
+  <a class="card-link" href="conflict.html">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=900&auto=format&fit=crop">
+      <div>
+        <h2>Conflict</h2>
+        <p>Understand how war destroys food systems and forces people into hunger.</p>
+      </div>
+    </div>
+  </a>
+
+  <a class="card-link" href="climate.html">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1400&auto=format&fit=crop">
+      <div>
+        <h2>Climate Change</h2>
+        <p>See how extreme weather reduces food production worldwide.</p>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+</body>
+</html>

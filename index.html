@@ -6,6 +6,7 @@
 <title>World Hunger</title>
 
 <style>
+
 * {
   margin: 0;
   padding: 0;
@@ -174,6 +175,24 @@ nav {
   color: white;
 }
 
+/* LINK STYLE */
+.text-link {
+  color: #ff4d4d;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  transition: 0.25s ease;
+}
+
+.text-link:visited {
+  color: #ff4d4d;
+}
+
+.text-link:hover {
+  color: white;
+  text-shadow: 0 0 8px rgba(255,77,77,0.7);
+}
+
 .card-content h2 {
   font-size: 36px;
   margin-bottom: 12px;
@@ -185,6 +204,7 @@ nav {
   color: #d1dbe8;
   line-height: 1.7;
 }
+
 </style>
 </head>
 
@@ -192,6 +212,7 @@ nav {
 
 <nav>
   <div class="logo">WORLD HUNGER</div>
+
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="page.html">Causes</a>
@@ -203,11 +224,14 @@ nav {
 
 <!-- HERO -->
 <div class="hero">
+
   <div class="hero-content">
     <h1>World Hunger</h1>
-    <p>Millions of people struggle every day without enough food.</p>
 
-    <!-- FIXED BUTTON -->
+    <p>
+      Millions of people struggle every day without enough food.
+    </p>
+
     <button onclick="window.open('https://www.wfp.org/global-hunger-crisis', '_blank')">
       Learn More
     </button>
@@ -216,62 +240,118 @@ nav {
   <div class="hero-source">
     Source: Unsplash
   </div>
+
 </div>
 
 <!-- CARDS -->
 <section class="cards-container">
 
+  <!-- CARD 1 -->
   <div class="info-card">
+
     <div class="image-box">
       <img src="https://images.unsplash.com/photo-1469571486292-b53601020f39?q=80&w=900&auto=format&fit=crop">
-      <div class="img-source">Source: Unsplash</div>
+
+      <div class="img-source">
+        Source: Unsplash
+      </div>
     </div>
+
     <div class="card-content">
+
       <h2>Definition & Root Causes</h2>
-      <p>World Hunger is defined by when people from nations all over the world experience severe food insecurity, meaning that they go entire days without eating. There are many root causes of World Hunger the main ones that make the issue prominent are poverty, conflict, and Inequity. </p>
+
+      <p>
+        World Hunger is defined by when people from nations all over the world
+        experience severe food insecurity, meaning that they go entire days
+        without eating.
+
+        There are many root causes of World Hunger. The main ones that make
+        the issue prominent are
+
+        <a href="poverty.html" class="text-link">poverty</a>,
+
+        <a href="conflict.html" class="text-link">conflict</a>,
+
+        and
+
+        <a href="climate.html" class="text-link">climate change</a>.
+      </p>
+
     </div>
+
   </div>
 
+  <!-- CARD 2 -->
   <div class="info-card">
+
     <div class="image-box">
       <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=900&auto=format&fit=crop">
-      <div class="img-source">Source: Unsplash</div>
+
+      <div class="img-source">
+        Source: Unsplash
+      </div>
     </div>
+
     <div class="card-content">
       <h2>Challenges</h2>
-      <p>Huge amounts of food are wasted while millions go hungry every day.</p>
+
+      <p>
+     World hunger poses serious challenges for the world such as malnutrition, diseases, poverty, and conflict. Lack of food can cause children to perform poorly at school, 
+     among other negative impacts on their lives. Lack of food also poses challenges to the economy and leads to migration within a country that is already 
+     considered in poverty. We also see an article that was published by Unicef officials titled "Child Food Poverty" which demonstrate just how many children are facing the negative consequences of world hunger,
+  we see this when they say 
+     "Globally, one in four children are living in severe child food poverty in early childhood, amounting to 181 million children under 5 years of age." (Unicef).
+      </p>
     </div>
+
   </div>
 
+  <!-- CARD 3 -->
   <div class="info-card">
+
     <div class="image-box">
       <img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?q=80&w=900&auto=format&fit=crop">
-      <div class="img-source">Source: Unsplash</div>
+
+      <div class="img-source">
+        Source: Unsplash
+      </div>
     </div>
+
     <div class="card-content">
       <h2>Explanation</h2>
-      <p>Food banks, donations, and awareness campaigns can reduce global hunger.</p>
+
+      <p>
+        These issues are relevant world hunger does not only mean that people can't eat, but also means that they are negatively affected in almost all daily tasks. First of all, malnutrition and sickness can and in many cases do cause physical suffering and can lead to the death of people, especially children and elderly people. The problem of poor academic achievements proves that hunger restricts educational and career opportunities for future generations. Economic issues arise due to the fact that the poor health of the population decreases labor productivity and raises medical expenses. Lastly, migration occurs when hungry citizens leave their native lands seeking better opportunities for food supply and safety.
+      </p>
     </div>
+
   </div>
 
 </section>
 
 <script>
+
 const cards = document.querySelectorAll(".info-card");
 
 const observer = new IntersectionObserver((entries) => {
+
   entries.forEach(entry => {
+
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
       entry.target.classList.remove("show");
     }
+
   });
+
 }, {
   threshold: 0.25
 });
 
 cards.forEach(card => observer.observe(card));
+
 </script>
 
 </body>

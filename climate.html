@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate - World Hunger</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f1626;
+  color: #e6edf3;
+}
+
+/* NAVBAR — EXACT COPY (UNCHANGED) */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 22, 38, 0.92);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff4d4d;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e6edf3;
+  margin-left: 18px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  background: #ff4d4d;
+  color: #0f1626;
+}
+
+/* HERO */
+.hero {
+  margin-top: 80px;
+  height: 50vh;
+  background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1400&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 22, 38, 0.55);
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 60px;
+  color: #ff4d4d;
+}
+
+/* CONTENT */
+.container {
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  gap: 25px;
+  background: rgba(255,255,255,0.04);
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.card img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card h2 {
+  color: #ff4d4d;
+}
+
+.card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR (UNCHANGED EXACTLY) -->
+<nav>
+  <div class="logo">WORLD HUNGER</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="page.html">Causes</a>
+    <a href="page2.html">Solutions</a>
+    <a href="page3.html">Work Cited</a>
+    <a href="page4.html">Image Cited</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Climate Change</h1>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=900&auto=format&fit=crop">
+    <div>
+      <h2>Droughts</h2>
+      <p>Climate change causes droughts that destroy crops and reduce food supply.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=900&auto=format&fit=crop">
+    <div>
+      <h2>Crop Failure</h2>
+      <p>Unpredictable weather makes farming harder and reduces harvests worldwide.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
