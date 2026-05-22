@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Conflict - World Hunger</title>
+<title>Poverty - World Hunger</title>
 
 <style>
 * {
@@ -18,7 +18,7 @@ body {
   color: #e6edf3;
 }
 
-/* NAVBAR (UNCHANGED) */
+/* NAVBAR — EXACT COPY (UNCHANGED) */
 nav {
   position: fixed;
   top: 0;
@@ -56,9 +56,9 @@ nav {
 
 /* HERO */
 .hero {
-  height: 55vh;
-  margin-top: 70px;
-  background: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1400&auto=format&fit=crop');
+  margin-top: 80px;
+  height: 50vh;
+  background: url('https://www.rand.org/content/rand/pubs/research_briefs/RB10040/jcr:content/par/product/par-research-brief/imagewithclass_46844854.fit.1000x0.webp/1568254441849.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -71,7 +71,7 @@ nav {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(15, 22, 38, 0.5);
+  background: rgba(15, 22, 38, 0.55);
 }
 
 .hero h1 {
@@ -94,7 +94,6 @@ nav {
   background: rgba(255,255,255,0.04);
   padding: 25px;
   border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .card img {
@@ -106,18 +105,54 @@ nav {
 
 .card h2 {
   color: #ff4d4d;
-  margin-bottom: 8px;
 }
 
 .card p {
   color: #cbd5e1;
   line-height: 1.6;
 }
+
+/* SOURCE TEXT */
+.img-source {
+  font-size: 11px;
+  color: #cbd5e1;
+  margin-top: 6px;
+}
+
+/* HERO SOURCE */
+.hero-source {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  background: rgba(0,0,0,0.35);
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  z-index: 2;
+}
+
+/* GRAPH */
+.graph-box {
+  background: rgba(255,255,255,0.04);
+  padding: 25px;
+  border-radius: 16px;
+}
+
+.graph-box iframe {
+  width: 100%;
+  height: 550px;
+  border: none;
+  border-radius: 12px;
+}
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR (UNCHANGED EXACTLY) -->
 <nav>
   <div class="logo">WORLD HUNGER</div>
   <div class="nav-links">
@@ -131,30 +166,47 @@ nav {
 
 <div class="hero">
   <h1>Conflict</h1>
+
+  <div class="hero-source">
+    (Connable)
+  </div>
 </div>
 
 <div class="container">
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1592312048762-9d6b3f2d0a3a?q=80&w=900&auto=format&fit=crop">
     <div>
-      <h2>War & Food Systems</h2>
+      <img src="https://www.wfp.org/sites/default/files/styles/hero_desktop_xl/public/images/WFP-conflict-and-peace.webp?itok=IpU81qeF">
+      <div class="img-source">(World Food Programme)</div>
+    </div>
+    <div>
+      <h2>Conflict</h2>
       <p>
-        Conflict destroys farms, transportation routes, and supply chains,
-        making food unavailable to civilians.
+      One of the primary reasons for world hunger is conflict since it ruins all the structures in which people relied on in order to meet their basic needs. Furthermore, the World Food Programme shows data that mentions "70% of acutely food-insecure people
+live in fragile or conflict-affected countries"(World Food Programme), and other data that says "25% increase in conflict in 2024 compared to 2023"(World Food Programme). This data shows the correlation between conflict and world hunger.
       </p>
     </div>
   </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1524492449090-1b0f8d0f2d8f?q=80&w=900&auto=format&fit=crop">
-    <div>
-      <h2>Displacement</h2>
-      <p>
-        People forced to flee lose access to land, income, and stable food sources,
-        increasing hunger rates dramatically.
-      </p>
-    </div>
+  <!-- GRAPH -->
+  <div class="graph-box">
+
+    <h2 style="margin-bottom: 20px; color:#ff4d4d;">
+     Conflict Data
+    </h2>
+
+  <div>
+  <img 
+    src="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Graphics%20Library/24-04-2026-GRFC-Map-01.png/image3000x3000.jpg"
+    style="width: 900px; height: auto; border-radius: 12px;"
+  >
+  <div class="img-source"></div>
+</div>
+
+<div class="img-source">
+  (United Nations)
+</div>
+
   </div>
 
 </div>

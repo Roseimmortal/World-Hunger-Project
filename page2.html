@@ -58,7 +58,7 @@ nav {
 .hero {
   margin-top: 90px;
   height: 45vh;
-  background: url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1400&auto=format&fit=crop');
+  background: url('https://www.borgenmagazine.com/wp-content/uploads/2014/03/World-Hunger-1024x490.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -78,6 +78,20 @@ nav {
   position: relative;
   font-size: 60px;
   color: #ff4d4d;
+}
+
+/* HERO SOURCE (BOTTOM OF IMAGE) */
+.hero-source {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: #cbd5e1;
+  background: rgba(0,0,0,0.4);
+  padding: 4px 10px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
 }
 
 /* CONTENT */
@@ -115,12 +129,25 @@ nav {
   line-height: 1.6;
 }
 
-/* GRAPH */
+/* SOURCE TEXT */
+.img-source {
+  font-size: 11px;
+  color: #cbd5e1;
+  margin-top: 8px;
+}
+
 .graph-box {
   background: rgba(255,255,255,0.04);
   padding: 25px;
   border-radius: 16px;
   border: 1px solid rgba(255,255,255,0.08);
+}
+
+.graph-box iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+  border-radius: 12px;
 }
 
 </style>
@@ -141,50 +168,52 @@ nav {
 
 <div class="hero">
   <h1>Solutions</h1>
+
+  <!-- HERO SOURCE (FIXED) -->
+  <div class="hero-source">(Borgen)</div>
 </div>
 
 <div class="container">
 
   <!-- CARD 1 -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?q=80&w=900&auto=format&fit=crop">
+    <img src="https://www.conservationfund.org/wp-content/uploads/2024/10/Insights_Sustaining-Americas-Small-Local-Farms-by-Connecting-Farmland-with-the-Next-Generation-of-Farmers_banner_Addison-Hill.jpg">
+
     <div>
-      <h2>Food Aid & Emergency Relief</h2>
+      <h2>Solutions</h2>
       <p>
-        One of the most immediate solutions to world hunger is emergency food aid.
-        Organizations deliver meals, water, and nutrition packs to people affected by famine,
-        war, and natural disasters. These programs save lives in the short term by making
-        sure vulnerable populations receive enough food to survive while longer-term solutions
-        are developed.
+       There are some ways that world hunger could be addressed. One way to tackle world hunger is by providing food assistance in times of disaster, wars, and scarcities in order for people to survive. This promotes the act of giving food and water to save lives. Improvement in farming will also allow countries to produce sufficient amounts of food on their own by using appropriate equipment and fertilizers. Conflict resolution is another factor that will address this problem because violence will be reduced, and when violence is reduced it allows for better practices in the country all around.
       </p>
+
+      <div class="img-source">Image: (Conservation Fund)</div>
     </div>
   </div>
 
   <!-- CARD 2 -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=900&auto=format&fit=crop">
+    <img src="https://www.ifpri.org/wp-content/uploads/2025/05/shutterstock_editorial_2161219925-1536x865.jpg">
+
     <div>
-      <h2>Improved Agriculture</h2>
+      <h2>Reasoning</h2>
       <p>
-        Strengthening agriculture helps communities grow more food locally instead of relying
-        on imports or aid. This includes better irrigation systems, improved seeds, and
-        modern farming tools. When farmers can grow more crops efficiently, food becomes
-        more available and affordable, reducing hunger in long-term and sustainable ways.
+       These solutions are important because they address both immediate needs and long term causes of world hunger. Food assistance is necessary during disasters, wars, and shortages because it helps people survive when they do not have access to enough food or water. Improving farming is also important because it helps countries become more independent and produce enough food on their own instead of relying on outside help. Conflict resolution is another key solution because reducing violence allows farms, transportation, and daily life to function properly again. Together, these solutions help reduce hunger by saving lives in emergencies and also fixing the problems that cause hunger in the first place.
       </p>
+
+      <div class="img-source">Image: (Boniphace)</div>
     </div>
   </div>
 
   <!-- CARD 3 -->
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=900&auto=format&fit=crop">
+    <img src="https://idsb.tmgrup.com.tr/2015/07/10/GenelBuyuk/1436522982590.jpg?v=1436549793">
+
     <div>
-      <h2>Education & Awareness</h2>
+      <h2>Evidence</h2>
       <p>
-        Education plays a major role in reducing hunger. Teaching communities about nutrition,
-        farming techniques, and resource management helps people make better food choices and
-        improve productivity. Awareness campaigns also encourage global support and funding
-        for hunger relief programs, helping reduce food insecurity worldwide.
+    Our solutions are supported by real data that shows they can reduce world hunger by targeting its main causes. The World Food Programme says that conflict “is the primary cause of today’s hunger crisis, driving people away from their land and livelihoods, disrupting markets, increasing food prices and destroying critical developmental gains” (World Food Programme). We see this supports conflict resolution because when violence decreases, people are able to return to farming and markets can function again. It also says that "318 million people are facing acute levels of food insecurity” (World Food Programme), which shows why solutions that improve food access are necessary. Concern Worldwide says that “65% of low-income working adults rely on farming both for their income and meals” (Concern Worldwide). This shows that improving agriculture can directly increase both food supply and income for families at the same time. Overall, we see that these solutions work because they focus on improving food production, stability, and access to food in the areas most affected by hunger.
       </p>
+
+      <div class="img-source">Image: (Saba)</div>
     </div>
   </div>
 
@@ -192,10 +221,17 @@ nav {
   <div class="graph-box">
 
     <h2 style="color:#ff4d4d; margin-bottom:15px;">
-      Global Hunger Trend (Estimated Data)
+      Global Poverty & Hunger Data 
     </h2>
 
-    
+    <iframe 
+      src="https://hungermap.wfp.org/food?w=ipc-phase-3"
+      loading="lazy">
+    </iframe>
+
+    <div class="img-source">
+      (World Food Programme) 
+    </div>
 
   </div>
 
